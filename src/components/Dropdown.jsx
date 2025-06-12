@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import { FiExternalLink } from "react-icons/fi";
-import { coursesDropdown } from "../data/coursesDropdown";
+import { coursesDropdown } from "../data/CoursesDropdown";
 import {
-  whyDropdown,
   partnersDropdown,
   resourcesDropdown,
 } from "../data/OtherDropdowns";
+import { Link } from "react-router-dom";
 
 const getWidthClass = (type) => {
   switch (type) {
@@ -41,9 +41,6 @@ const DropdownMenu = ({ type, mobile = false }) => {
     case "courses":
       data = coursesDropdown;
       break;
-    case "why":
-      data = whyDropdown;
-      break;
     case "partners":
       data = partnersDropdown;
       break;
@@ -68,9 +65,10 @@ const DropdownMenu = ({ type, mobile = false }) => {
             </h3>
             <div className="space-y-3">
               {items.map((item, idx) => (
-                <a
+
+                <Link
                   key={idx}
-                  href="#"
+                  to={`/courses/${item.id}`}
                   className="block p-2 -m-2 rounded-lg hover:bg-green-50 transition-colors duration-200 group/item"
                 >
                   <div className="flex justify-between items-start flex-wrap">
@@ -86,7 +84,7 @@ const DropdownMenu = ({ type, mobile = false }) => {
                       )}
                     </div>
                   </div>
-                </a>
+                </Link>
               ))}
             </div>
           </div>

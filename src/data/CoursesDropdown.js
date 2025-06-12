@@ -1,20 +1,22 @@
 export const coursesDropdown = {
   "Data + AI": [
-    { name: "Data Analytics Career Track" },
-    { name: "Data Science Career Track" },
-    { name: "Data Engineering Career Track" },
-    { name: "Machine Learning Engineering and AI Career Track" },
+    { id: "data-analytics", name: "Data Analytics Career Track" },
+    { id: "data-science", name: "Data Science Career Track" },
+    { id: "data-engineering", name: "Data Engineering Career Track" },
+    { id: "ml-ai", name: "Machine Learning Engineering and AI Career Track" },
   ],
   Cybersecurity: [
-    { name: "Cybersecurity Career Track" },
+    { id: "cybersecurity", name: "Cybersecurity Career Track" },
   ],
   "Software Engineering": [
-    { name: "Software Engineering Career Track" },
-    { name: "Software Engineering for Beginners" },
+    { id: "software-eng", name: "Software Engineering Career Track" },
+    { id: "software-beginners", name: "Software Engineering for Beginners" },
   ],
   Design: [
-    { name: "UI/UX Design Career Track" },
-    { name: "UX Career Track" },
+    { id: "uiux-design", name: "UI/UX Design Career Track" },
+    { id: "ux-career", name: "UX Career Track" },
   ],
-  Healthcare: [{ name: "Medical Assistant Career Track" }],
+  Healthcare: [
+    { id: "medical-assistant", name: "Medical Assistant Career Track" },
+  ],
 };
