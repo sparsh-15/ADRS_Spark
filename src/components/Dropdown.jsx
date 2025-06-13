@@ -93,13 +93,13 @@ const DropdownMenu = ({ type, mobile = false }) => {
 
       {type === "courses" && (
         <div className="mt-6 pt-6 border-t border-gray-100">
-          <a
-            href="#"
+          <Link
+            to={"/allcourses"}
             className="flex items-center text-green-600 hover:text-green-700 font-medium transition-colors duration-200"
           >
             View all courses
             <FiExternalLink className="ml-2" />
-          </a>
+          </Link>
         </div>
       )}
     </div>

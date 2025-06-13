@@ -33,11 +33,16 @@ const Navbar = () => {
 
 
     return (
-        <nav className="bg-white shadow-sm px-4 sm:px-8  py-4 flex items-center justify-between border-b border-gray-100">
+        <nav className="bg-white shadow-sm px-4 sm:px-8  py-1 flex items-center justify-between border-b border-gray-100">
             {/* Logo */}
-            <h1 className="text-2xl font-bold text-gray-900">
-                ADRS <span className="text-gray-600">SPARK</span>
-            </h1>
+            <Link to="/" className="inline-block">
+                <img
+                    src="/src/assets/download-removebg-preview.png"
+                    alt="ADRS Spark Logo"
+                    className="h-auto w-20 object-contain transition-transform duration-300 hover:scale-105"
+                />
+            </Link>
+
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center gap-10 nav-interactive-area">
@@ -94,7 +99,7 @@ const Navbar = () => {
                 <Link
                     to={'/contact'}
                 >
-                    <button className="flex items-center bg-indigo-600 text-white px-5 py-2 rounded-md font-medium hover:bg-indigo-700 transition-all duration-200 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                    <button className="flex items-center bg-indigo-600 text-white px-5 py-2.5 rounded-md font-medium hover:bg-indigo-700 transition-all duration-200 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                         <FiUserPlus className="mr-2" />
                         Register
                         <FiArrowUpRight className="ml-2" />
@@ -181,11 +186,15 @@ const Navbar = () => {
 
                     {/* Footer Buttons */}
                     <div className="px-6 py-4 border-t border-gray-100 space-y-3 mt-2">
-                        <button className="w-full flex items-center justify-center bg-indigo-600 text-white px-5 py-2 rounded-md font-medium hover:bg-indigo-700 transition-all duration-200 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                            <FiUserPlus className="mr-2" />
-                            Register
-                            <FiArrowUpRight className="ml-2" />
-                        </button>
+                        <Link
+                            to={'/contact'} onClick={() => setMobileMenuOpen(false)}
+                        >
+                            <button className="w-full flex items-center justify-center bg-indigo-600 text-white px-5 py-2 rounded-md font-medium hover:bg-indigo-700 transition-all duration-200 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                                <FiUserPlus className="mr-2" />
+                                Register
+                                <FiArrowUpRight className="ml-2" />
+                            </button>
+                        </Link>
                     </div>
                 </div>
             )}
