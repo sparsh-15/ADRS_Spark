@@ -116,8 +116,8 @@ const RegisterForm = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-200 via-green-100 to-white px-4">
-      <div className="w-full max-w-md mb-16">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-200 via-green-100 to-white px-2">
+      <div className="w-full max-w-md my-4">
         <form
           onSubmit={handleSubmit}
           className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl overflow-hidden border border-white/20 w-full p-4 sm:p-6"

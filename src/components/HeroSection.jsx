@@ -58,7 +58,7 @@ const HeroSection = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {coursesFlat.map((course) => (
+            {coursesFlat.slice(0,6).map((course) => (
               <div key={course.id} className="bg-white mx-4 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
                 <img src={course.image} alt={course.name} className="w-full h-64 object-center" />
 

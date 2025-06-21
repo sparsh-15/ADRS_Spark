@@ -101,5 +101,80 @@ export const coursesFlat = [
     rating: 4.8,
     students: 1250,
     price: "599"
+  },  {
+    id: "ml-ai",
+    name: "Machine Learning Engineering and AI Career Track",
+    category: "Data + AI",
+    description:
+      "A project-driven program to master machine learning and deep learning using Python, TensorFlow, and real-world datasets.",
+    duration: "9 months",
+    level: "Intermediate to Advanced",
+    instructors: ["Dr. Kavita Iyer", "Prashant Thakur"],
+    image: "https://images.ctfassets.net/aq13lwl6616q/5I6ucCAiSCWaTKqruyiOfp/0bcee41ece5dfdee67ebea6d50ccba92/-Career_Path-_-_Become_a_Machine_Learning_Engineer.jpg",
+    features: [
+      "Real-World ML Projects",
+      "Industry Capstone",
+      "AI Product Thinking",
+    ],
+    syllabus: [
+      "Math for ML",
+      "Supervised & Unsupervised Learning",
+      "Deep Learning with TensorFlow",
+      "Model Deployment",
+      "AI Ethics & Regulations",
+    ],
+    rating: 4.8,
+    students: 1250,
+    price: "599"
+  },  {
+    id: "ml-ai",
+    name: "Machine Learning Engineering and AI Career Track",
+    category: "Data + AI",
+    description:
+      "A project-driven program to master machine learning and deep learning using Python, TensorFlow, and real-world datasets.",
+    duration: "9 months",
+    level: "Intermediate to Advanced",
+    instructors: ["Dr. Kavita Iyer", "Prashant Thakur"],
+    image: "https://images.ctfassets.net/aq13lwl6616q/5I6ucCAiSCWaTKqruyiOfp/0bcee41ece5dfdee67ebea6d50ccba92/-Career_Path-_-_Become_a_Machine_Learning_Engineer.jpg",
+    features: [
+      "Real-World ML Projects",
+      "Industry Capstone",
+      "AI Product Thinking",
+    ],
+    syllabus: [
+      "Math for ML",
+      "Supervised & Unsupervised Learning",
+      "Deep Learning with TensorFlow",
+      "Model Deployment",
+      "AI Ethics & Regulations",
+    ],
+    rating: 4.8,
+    students: 1250,
+    price: "599"
+  },  {
+    id: "ml-ai",
+    name: "Machine Learning Engineering and AI Career Track",
+    category: "Data + AI",
+    description:
+      "A project-driven program to master machine learning and deep learning using Python, TensorFlow, and real-world datasets.",
+    duration: "9 months",
+    level: "Intermediate to Advanced",
+    instructors: ["Dr. Kavita Iyer", "Prashant Thakur"],
+    image: "https://images.ctfassets.net/aq13lwl6616q/5I6ucCAiSCWaTKqruyiOfp/0bcee41ece5dfdee67ebea6d50ccba92/-Career_Path-_-_Become_a_Machine_Learning_Engineer.jpg",
+    features: [
+      "Real-World ML Projects",
+      "Industry Capstone",
+      "AI Product Thinking",
+    ],
+    syllabus: [
+      "Math for ML",
+      "Supervised & Unsupervised Learning",
+      "Deep Learning with TensorFlow",
+      "Model Deployment",
+      "AI Ethics & Regulations",
+    ],
+    rating: 4.8,
+    students: 1250,
+    price: "599"
   },
 ];

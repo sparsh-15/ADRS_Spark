@@ -1,9 +1,9 @@
 import React from 'react';
-import { 
-  HiOutlineLightBulb, 
-  HiOutlineAcademicCap, 
-  HiOutlineUsers, 
-  HiOutlineTrendingUp, 
+import {
+  HiOutlineLightBulb,
+  HiOutlineAcademicCap,
+  HiOutlineUsers,
+  HiOutlineTrendingUp,
   HiOutlineGlobeAlt,
   HiOutlineShieldCheck,
   HiOutlineClock,
@@ -14,6 +14,7 @@ import {
   HiOutlineHeart
 } from 'react-icons/hi';
 import { FiArrowRight, FiStar, FiCheck } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 const WhyADRSSpark = () => {
   const features = [
@@ -104,16 +105,16 @@ const WhyADRSSpark = () => {
             <HiOutlineLightBulb className="w-4 h-4 mr-2" />
             Why Choose ADRS Spark
           </div>
-          
+
           <h1 className="text-5xl lg:text-7xl font-bold text-slate-900 mb-8 leading-tight">
             Your Success is Our
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">
               Mission
             </span>
           </h1>
-          
+
           <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-12 leading-relaxed">
-            We don't just teach courses – we transform careers. Join thousands of professionals who've 
+            We don't just teach courses – we transform careers. Join thousands of professionals who've
             accelerated their growth with our proven methodology and expert guidance.
           </p>
 
@@ -173,11 +174,11 @@ const WhyADRSSpark = () => {
                 <HiOutlineSparkles className="w-4 h-4 mr-2" />
                 Our Advantages
               </span>
-              
+
               <h2 className="text-4xl font-bold text-slate-900 mb-8">
                 Why 50,000+ Professionals Choose ADRS Spark
               </h2>
-              
+
               <div className="space-y-4 mb-8">
                 {advantages.map((advantage, index) => (
                   <div key={index} className="flex items-start gap-3">
@@ -188,13 +189,13 @@ const WhyADRSSpark = () => {
                   </div>
                 ))}
               </div>
-              
+
               <button className="bg-green-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-green-700 transition-all duration-300 flex items-center gap-3 shadow-lg hover:shadow-xl group">
                 Start Your Journey
                 <FiArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
-            
+
             <div className="relative">
               <div className="bg-gradient-to-br from-green-100 to-blue-100 rounded-3xl p-8 border border-slate-300/50">
                 <div className="grid grid-cols-2 gap-6">
@@ -245,11 +246,11 @@ const WhyADRSSpark = () => {
                     <FiStar key={i} className="w-5 h-5 text-amber-400 fill-current" />
                   ))}
                 </div>
-                
+
                 <p className="text-slate-700 mb-6 leading-relaxed italic">
                   "{testimonial.content}"
                 </p>
-                
+
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold">
                     {testimonial.avatar}
@@ -266,7 +267,7 @@ const WhyADRSSpark = () => {
       </section>
 
       {/* CTA Section */}
-     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#f0fdfa] via-[#e0f2fe] to-[#fefce8]">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#f0fdfa] via-[#e0f2fe] to-[#fefce8]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-extrabold text-gray-900 mb-6 tracking-tight">Ready to Transform Your Career?</h2>
           <p className="text-lg sm:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
@@ -274,9 +275,12 @@ const WhyADRSSpark = () => {
             <span className="text-indigo-700 font-semibold">ADRS Spark</span>. Your success story starts here.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-all duration-300 shadow-md hover:shadow-xl">
-              Explore Courses
-            </button>
+            <Link
+              to="/allcourses">
+              <button className="cursor-pointer bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-all duration-300 shadow-md hover:shadow-xl">
+                Explore Courses
+              </button>
+            </Link>
             <button className="border-2 border-indigo-600 text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-all duration-300">
               Book Free Consultation
             </button>

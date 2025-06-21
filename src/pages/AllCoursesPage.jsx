@@ -65,19 +65,22 @@ const AllCourses = () => {
 
     <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 flex flex-col">
       {/* Image & badges */}
-      <div className="relative overflow-hidden">
-        <img
-          src={course.image}
-          alt={course.name}
-          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-        <div className="absolute top-4 right-4">
-          <div className="bg-white/95 backdrop-blur-sm rounded-full px-3 py-1 flex items-center gap-1 shadow-sm">
-            <Star className="w-4 h-4 fill-blue-400 text-blue-400" />
-            <span className="text-sm font-semibold">{course.rating}</span>
+      <Link
+        key={course}
+        to={`/courses/${course.id}`}>
+        <div className="relative overflow-hidden">
+          <img
+            src={course.image}
+            alt={course.name}
+            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div className="absolute top-4 right-4">
+            <div className="bg-white/95 backdrop-blur-sm rounded-full px-3 py-1 flex items-center gap-1 shadow-sm">
+              <Star className="w-4 h-4 fill-blue-400 text-blue-400" />
+              <span className="text-sm font-semibold">{course.rating}</span>
+            </div>
           </div>
-        </div>
-      </div>
+        </div></Link>
 
       {/* Card content: flexible column */}
       <div className="p-5 flex flex-col flex-grow">

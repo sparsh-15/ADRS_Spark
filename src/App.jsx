@@ -10,11 +10,13 @@ import WhyADRSSpark from "./pages/WhyADRSspark";
 import Blog from "./pages/Blog";
 import Footer from "./components/Footer";
 import AllCourses from "./pages/AllCoursesPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 const AppRoutes = () => {
   return (
     <>
       <Navbar />
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/courses/:id" element={<CoursePage />} />
